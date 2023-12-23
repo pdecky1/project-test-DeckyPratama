@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Suitmedia - Ideas</title>
+</head>
+<body class="font-Roboto">
+    <header id="main-header" class=" w-full fixed z-50 bg-1">
+        <nav class="container flex flex-row mx-auto items-center justify-between my-7">
+            <img src="./img/Suitmedia-white.png" alt="" class="w-[100px]">
+            <ul class="flex flex-row text-white gap-10">
+                <li class="">
+                    <a href="#">Work</a>
+                </li>
+                <li class="">
+                    <a href="#">About</a>
+                </li>
+                <li class="">
+                    <a href="#">Service</a>
+                </li>
+                <li class="">
+                    <a href="./index.html" class="active">Ideas</a>
+                </li>
+                <li class="">
+                    <a href="#">Careers</a>
+                </li>
+                <li class="">
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="parallax-section">
+        <div class="parallax-bg the-BG" style="background-image: url('https://suitmedia.static-assets.id/storage/files/601/6.jpg')"></div>
+        <div class="parallax-content">
+          <h1 class="font-medium text-7xl">Ideas</h1>
+          <p class="text-xl">Where all our great things begin</p>
+        </div>
+      </section>
+
+    <section id="app" class="container mx-auto my-10">
+        
+        <div id="paginationControls" class="flex justify-between items-center my-5">
+            <div class="w-1/2">
+                <p id="resultInfo">Showing 1 - 10 of 100</p>
+            </div>
+            <div class="w-1/2 flex flex-row justify-end gap-x-5">
+                <div class="flex flex-row items-center">
+                    <p for="showPerPage">Show per Page</p>
+                    <select id="showPerPage" class="mx-2 py-2 px-7 items-start border rounded-full">
+                        <option value="10">10</option>
+                        <option value="20">20</option>
+                        <option value="50">50</option>
+                    </select>
+                </div>
+                <div class="flex flex-row items-center">
+                    <p for="sortBy">Sort by</p>
+                    <select id="sortBy" class="mx-2 py-2 px-7 items-start border rounded-full">
+                        <option value="newest">Newest</option>
+                        <option value="latest">Latest</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-4 gap-10 pt-5" id="Dpost">
+
+    
+            
+            
+
+        </div>
+
+        <div class="mt-8 flex justify-center items-center">
+            <button id="fullprevPage" class="">
+                <img src="./img/fullback.png" alt="" class="w-10">
+            </button>
+            <button id="prevPage" class="">
+                <img src="./img/back.png" alt="" class="w-10">
+            </button>
+        
+            
+            <div id="paginationNumbers" class="flex mx-2">
+                
+            </div>
+        
+            <button id="nextPage" class="">
+                <img src="./img/next.png" alt="" class="w-10">
+            </button>
+            <button id="fullnextPage" class="">
+                <img src="./img/fullrnext.png" alt="" class="w-10">
+            </button>
+        </div>
+
+        
+
+        
+      
+        
+    </section>
+
+    
+
+    
+    <script src="./app.js"></script>
+</body>
+</html>

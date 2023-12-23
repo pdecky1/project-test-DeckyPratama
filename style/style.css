@@ -1,0 +1,50 @@
+.the-BG {
+    clip-path: polygon(0 0, 100% 0%, 100% 80%, 0 100%);
+}
+
+nav ul li a.active,
+nav ul li a:hover{
+  text-decoration: underline;
+  text-underline-offset: 0.5em;
+  text-decoration-thickness: 2px;
+}
+
+header.bg-1{
+  background-color: rgba(255, 102, 0);
+  transition: transform 0.3s ease-out;
+}
+
+header.bg-2{
+  background-color: rgba(255, 102, 0, 0.8);
+  transition: transform 0.3s ease-in;
+}
+
+header.hide {
+  transform: translateY(-100%);
+}
+
+.parallax-section {
+  position: relative;
+  height: 50vh;
+  overflow: hidden;
+}
+
+.parallax-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.parallax-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
